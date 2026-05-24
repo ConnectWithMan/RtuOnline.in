@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./rtu.jpg"> 
+    <meta name="description" content="Page not found on RTU Online.">
+    <title>404 Not Found | RTU Online</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        a {
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: #ffffff;
+            color: #333;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: #007bff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* 404 Section Styles */
+        .error-section {
+            text-align: center;
+            padding: 4rem 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            color: #007bff;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+        .error-message {
+            font-size: 1.8rem;
+            color: #222;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .error-description {
+            color: #666;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+        }
+        .btn-primary {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: #555;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #ddd;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">RTU<span>Online</span></a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/result">Result</a></li>
+                    <li><a href="/search">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 404 Content Section -->
+    <main>
+        <section class="error-section">
+            <h1 class="error-code">404</h1>
+            <p class="error-message">Oops! Page Not Found</p>
+            <p class="error-description">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+            
+            <a href="/" class="btn-primary">
+                Return to Homepage
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; RTU Online (rtuonline.in). All rights reserved.</p>
+            <p><a href="/about">About Us</a> | <a href="/contact">Contact Us </a> | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
