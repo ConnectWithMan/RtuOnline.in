@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./rtu.jpg"> 
-    <meta name="description" content="RTU Online - Download Rajasthan Technical University (RTU) Previous Year Question Papers for B.Tech, M.Tech, MBA, and MCA.">
+    <meta name="description" content="Download RTU Previous Year Question Papers (RTU PYQ) for B.Tech. Get the largest collection of Rajasthan Technical University past papers to boost your exam preparation.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="RTU Online | Download RTU Question Papers">
-    <meta property="og:description" content="RTU Online - Download Rajasthan Technical University (RTU) Previous Year Question Papers for B.Tech, M.Tech, MBA, and MCA.">
+    <meta property="og:title" content="RTU Previous Year Question Papers (PYQ) | RTU Online">
+    <meta property="og:description" content="Download RTU Previous Year Question Papers (RTU PYQ) for B.Tech. Get the largest collection of Rajasthan Technical University past papers.">
     <meta property="og:url" content="https://rtuonline.in/">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://rtuonline.in/">
-    <title>RTU Online | RTU Question Papers</title>
+    <title>RTU Previous Year Question Papers (PYQ) | RTU Online</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "RTU Online",
       "url": "https://rtuonline.in/",
-      "description": "Rajasthan Technical University (RTU) Previous Year Question Papers for B.Tech, M.Tech, MBA, and MCA."
+      "description": "Download RTU Previous Year Question Papers (RTU PYQ) for B.Tech. Get the largest collection of Rajasthan Technical University past papers."
     }
     </script>
     <style>
@@ -30,9 +31,9 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f4f7f6;
+            background-color: #ffffff;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.5;
         }
         a {
             text-decoration: none;
@@ -43,7 +44,7 @@
             background: #ffffff;
             color: #333;
             padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #eaeaea;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -84,62 +85,111 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 5rem 20px;
-            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            padding: 3rem 20px 2rem;
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
             color: #333;
         }
         .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
         }
         .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.1rem;
+            color: #555;
             max-width: 800px;
-            margin: 0 auto 2.5rem auto;
+            margin: 0 auto;
         }
 
         /* Course Grid Section */
         .courses {
-            padding: 4rem 20px;
+            padding: 2.5rem 20px;
             text-align: center;
         }
         .courses h2 {
-            margin-bottom: 3rem;
-            font-size: 2.2rem;
-            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            color: #222;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .courses-alt {
+            background-color: #fcfcfc;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             max-width: 1200px;
             margin: 0 auto;
         }
         .card {
             background: #fff;
-            padding: 2.5rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 4px solid #007bff;
-            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 1.5rem 1rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            transition: background-color 0.2s, border-color 0.2s;
             cursor: pointer;
             display: block;
             color: inherit;
         }
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            border-top-color: #0056b3;
+            background-color: #f4f8ff;
+            border-color: #a3c6ff;
+        }
+        .card.active {
+            border-color: #ff5100;
+            background-color: #fff5f0;
         }
         .card h3 {
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             color: #0056b3;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
         .card p {
             color: #666;
             font-size: 1rem;
+        }
+
+        /* List Layout for Papers */
+        .list-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .paper-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            transition: background-color 0.2s;
+            text-align: left;
+            color: inherit;
+        }
+        .paper-row:hover {
+            background-color: #f4f8ff;
+        }
+        .paper-row h3 {
+            font-size: 1.1rem;
+            color: #ff5100;
+            margin-bottom: 4px;
+        }
+        .paper-row p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .paper-download {
+            font-weight: bold;
+            color: #555;
+            white-space: nowrap;
         }
 
         /* Footer */
@@ -219,6 +269,13 @@
             .courses {
                 padding: 2.5rem 15px;
             }
+            .paper-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .paper-download {
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -248,37 +305,32 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Download RTU Previous Year Question Papers</h1>
-                <p>The largest collection of B.Tech, M.Tech, MBA, and MCA question papers for Rajasthan Technical University students.</p>
+                <h1>Download RTU Previous Year Question Papers (RTU PYQ)</h1>
+                <p>The largest collection of B.Tech previous year question papers (PYQ) for Rajasthan Technical University students. Start your exam preparation today.</p>
             </div>
         </section>
 
-        <!-- Course Categories -->
-        <section class="courses" id="courses">
+        <!-- Branches Section -->
+        <section class="courses" id="branches-section">
             <div class="container">
-                <h2>Select Your Course</h2>
-                <div class="grid">
-                    <!-- B.Tech -->
-                    <a href="#" class="card">
-                        <h3>B.Tech</h3>
-                        <p>Computer Science, Civil, Mechanical, Electrical, Electronics, and more.</p>
-                    </a>
-                    <!-- M.Tech -->
-                    <a href="#" class="card">
-                        <h3>M.Tech</h3>
-                        <p>Download previous year papers for various specialized M.Tech branches.</p>
-                    </a>
-                    <!-- MBA -->
-                    <a href="#" class="card">
-                        <h3>MBA</h3>
-                        <p>Marketing, Finance, HR, and other management question papers.</p>
-                    </a>
-                    <!-- MCA -->
-                    <a href="#" class="card">
-                        <h3>MCA</h3>
-                        <p>Master of Computer Applications semester-wise question papers.</p>
-                    </a>
-                </div>
+                <h2 id="branches-title">Select Your Branch</h2>
+                <div class="grid" id="branches-grid"></div>
+            </div>
+        </section>
+
+        <!-- Semesters Section -->
+        <section class="courses courses-alt" id="semesters-section" style="display: none;">
+            <div class="container">
+                <h2 id="semesters-title">Select Semester</h2>
+                <div class="grid" id="semesters-grid"></div>
+            </div>
+        </section>
+
+        <!-- Papers Section -->
+        <section class="courses" id="papers-section">
+            <div class="container">
+                <h2 id="papers-title">Download Papers</h2>
+                <div class="list-layout" id="papers-list"></div>
             </div>
         </section>
     </main>
@@ -309,6 +361,306 @@
                 navMenu.classList.remove('active');
             });
         });
+
+        // Dynamic Course Navigation Logic
+        const courseData = {
+            "B.Tech": {
+                semesters: 8,
+                branches: ["1st Year", "CS Related", "Civil", "Mechanical"]
+            }
+        };
+
+        // Dummy data structure for papers based on branch and semester
+        const papersData = {
+            "1st Year": {
+                "1": [
+                    { title: "Engineering Mathematics-I (2023)", code: "MAT101" },
+                    { title: "Engineering Physics (2023)", code: "PHY101" },
+                    { title: "Basic Electrical Engg (2023)", code: "BEE101" },
+                    { title: "Communication Skills (2023)", code: "ENG101" }
+                ],
+                "2": [
+                    { title: "Engineering Mathematics-II (2023)", code: "MAT102" },
+                    { title: "Engineering Chemistry (2023)", code: "CHY101" },
+                    { title: "Programming for PS (2023)", code: "CS101" },
+                    { title: "Basic Mechanical Engg (2023)", code: "BME101" }
+                ]
+            },
+            "CS Related": {
+                "3": [
+                    { title: "Data Structures & Algorithms (2023)", code: "CS301" },
+                    { title: "Digital Electronics (2023)", code: "EC301" },
+                    { title: "Software Engineering (2023)", code: "CS302" }
+                ],
+                "4": [
+                    { title: "Microprocessors (2023)", code: "CS401" },
+                    { title: "Database Management (2023)", code: "CS402" },
+                    { title: "Theory of Computation (2023)", code: "CS403" }
+                ],
+                "5": [
+                    { title: "Operating Systems (2023)", code: "CS501" },
+                    { title: "Computer Graphics (2023)", code: "CS502" },
+                    { title: "Compiler Design (2023)", code: "CS503" }
+                ],
+                "6": [
+                    { title: "Artificial Intelligence (2023)", code: "CS601" },
+                    { title: "Computer Networks (2023)", code: "CS602" },
+                    { title: "Cloud Computing (2023)", code: "CS603" }
+                ],
+                "7": [
+                    { title: "Machine Learning (2023)", code: "CS701" },
+                    { title: "Internet of Things (2023)", code: "CS702" },
+                    { title: "Cyber Security (2023)", code: "CS703" }
+                ],
+                "8": [
+                    { title: "Big Data Analytics (2023)", code: "CS801" },
+                    { title: "Data Science (2023)", code: "CS802" }
+                ]
+            },
+            "Civil": {
+                "3": [
+                    { title: "Fluid Mechanics (2023)", code: "CE301" },
+                    { title: "Building Materials (2023)", code: "CE302" },
+                    { title: "Solid Mechanics (2023)", code: "CE303" }
+                ],
+                "4": [
+                    { title: "Structural Analysis-I (2023)", code: "CE401" },
+                    { title: "Concrete Technology (2023)", code: "CE402" },
+                    { title: "Surveying-I (2023)", code: "CE403" }
+                ],
+                "5": [
+                    { title: "Structural Analysis-II (2023)", code: "CE501" },
+                    { title: "Design of Concrete Structures-I (2023)", code: "CE502" },
+                    { title: "Geotechnical Engg-I (2023)", code: "CE503" }
+                ],
+                "6": [
+                    { title: "Design of Steel Structures-I (2023)", code: "CE601" },
+                    { title: "Environmental Engg-I (2023)", code: "CE602" },
+                    { title: "Highway Engineering (2023)", code: "CE603" }
+                ],
+                "7": [
+                    { title: "Water Resources Engg (2023)", code: "CE701" },
+                    { title: "Design of Steel Structures-II (2023)", code: "CE702" },
+                    { title: "Estimation and Costing (2023)", code: "CE703" }
+                ],
+                "8": [
+                    { title: "Bridge Engineering (2023)", code: "CE801" },
+                    { title: "Project Planning (2023)", code: "CE802" }
+                ]
+            },
+            "Mechanical": {
+                "3": [
+                    { title: "Thermodynamics (2023)", code: "ME301" },
+                    { title: "Manufacturing Processes (2023)", code: "ME302" },
+                    { title: "Material Science (2023)", code: "ME303" }
+                ],
+                "4": [
+                    { title: "Kinematics of Machines (2023)", code: "ME401" },
+                    { title: "Fluid Mechanics (2023)", code: "ME402" },
+                    { title: "Machining (2023)", code: "ME403" }
+                ],
+                "5": [
+                    { title: "Dynamics of Machines (2023)", code: "ME501" },
+                    { title: "Heat Transfer (2023)", code: "ME502" },
+                    { title: "Design of Machine Elements-I (2023)", code: "ME503" }
+                ],
+                "6": [
+                    { title: "Design of Machine Elements-II (2023)", code: "ME601" },
+                    { title: "Automobile Engineering (2023)", code: "ME602" },
+                    { title: "Mechatronics (2023)", code: "ME603" }
+                ],
+                "7": [
+                    { title: "CAD/CAM (2023)", code: "ME701" },
+                    { title: "Power Plant Engineering (2023)", code: "ME702" },
+                    { title: "Renewable Energy (2023)", code: "ME703" }
+                ],
+                "8": [
+                    { title: "Quality Assurance (2023)", code: "ME801" },
+                    { title: "Robotics (2023)", code: "ME802" }
+                ]
+            }
+        };
+
+        const branchesSection = document.getElementById('branches-section');
+        const branchesTitle = document.getElementById('branches-title');
+        const branchesGrid = document.getElementById('branches-grid');
+        
+        const semestersSection = document.getElementById('semesters-section');
+        const semestersTitle = document.getElementById('semesters-title');
+        const semestersGrid = document.getElementById('semesters-grid');
+        
+        const papersSection = document.getElementById('papers-section');
+        const papersTitle = document.getElementById('papers-title');
+        const papersList = document.getElementById('papers-list');
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize default view with no selections and all papers
+            renderBranches('B.Tech', null, false);
+            semestersSection.style.display = 'none';
+            renderPapers('B.Tech', null, null, false);
+        });
+
+        function renderBranches(course, activeBranch = null, scroll = true) {
+            branchesTitle.innerText = `Select Your Branch`;
+            
+            const branches = courseData[course]?.branches || [];
+            branchesGrid.innerHTML = branches.map(branch => {
+                const description = branch === "CS Related" ? "( IT, AI, AIDS, AIML )" : "Click to view semesters";
+                const activeClass = branch === activeBranch ? 'active' : '';
+                return `
+                    <a href="#" class="card branch-card ${activeClass}">
+                        <h3>${branch}</h3>
+                        <p>${description}</p>
+                    </a>
+                `;
+            }).join('');
+
+            if (scroll) {
+                setTimeout(() => {
+                    branchesSection.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+
+            branchesGrid.querySelectorAll('.branch-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    branchesGrid.querySelectorAll('.branch-card').forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                    const branchName = card.querySelector('h3').innerText;
+                    renderSemesters(course, branchName, null, true);
+                });
+            });
+        }
+
+        function renderSemesters(course, branch, activeSemester = null, scroll = true) {
+            semestersSection.style.display = 'block';
+            semestersTitle.innerText = `Select Semester (${branch})`;
+            
+            let startSemester = 1;
+            let endSemester = courseData[course]?.semesters || 8;
+
+            if (branch === "1st Year") {
+                startSemester = 1;
+                endSemester = 2;
+            } else if (["CS Related", "Civil", "Mechanical"].includes(branch)) {
+                startSemester = 3; // Show the remaining 6 semesters (3 to 8) for core branches
+                endSemester = 8;
+            }
+
+            let semestersHTML = '';
+            for (let i = startSemester; i <= endSemester; i++) {
+                const activeClass = i == activeSemester ? 'active' : '';
+                semestersHTML += `
+                    <a href="#papers" class="card semester-card ${activeClass}" data-semester="${i}">
+                        <h3>Semester ${i}</h3>
+                        <p>View question papers</p>
+                    </a>
+                `;
+            }
+            semestersGrid.innerHTML = semestersHTML;
+            
+            // Show all papers for this branch initially if no semester is chosen
+            if (activeSemester === null) {
+                renderPapers(course, branch, null, false);
+            }
+
+            if (scroll) {
+                setTimeout(() => {
+                    semestersSection.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+
+            semestersGrid.querySelectorAll('.semester-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    semestersGrid.querySelectorAll('.semester-card').forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                    const semester = card.getAttribute('data-semester');
+                    renderPapers(course, branch, semester);
+                });
+            });
+        }
+
+        function renderPapers(course, branch = null, semester = null, scroll = true) {
+            if (!branch && !semester) {
+                papersTitle.innerText = `Download All RTU PYQ Papers`;
+            } else if (branch && !semester) {
+                papersTitle.innerText = `Download RTU PYQ (${course} - ${branch})`;
+            } else {
+                papersTitle.innerText = `Download RTU PYQ (${course} - ${branch} - Sem ${semester})`;
+            }
+            
+            let htmlToRender = '';
+
+            if (!branch && !semester) {
+                // Render All papers
+                for (const b in papersData) {
+                    for (const s in papersData[b]) {
+                        const dummyPapers = papersData[b][s];
+                        if (dummyPapers && dummyPapers.length > 0) {
+                            htmlToRender += dummyPapers.map(paper => `
+                                <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                                    <div class="paper-info">
+                                        <h3>${paper.title}</h3>
+                                        <p>${b} - Semester ${s}</p>
+                                    </div>
+                                    <div class="paper-download"></div>
+                                </a>
+                            `).join('');
+                        }
+                    }
+                }
+            } else if (branch && !semester) {
+                // Render All papers for a specific branch
+                const branchPapers = papersData[branch] || {};
+                for (const s in branchPapers) {
+                    const dummyPapers = branchPapers[s];
+                    if (dummyPapers && dummyPapers.length > 0) {
+                        htmlToRender += dummyPapers.map(paper => `
+                            <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                                <div class="paper-info">
+                                    <h3>${paper.title}</h3>
+                                    <p>${branch} - Semester ${s}</p>
+                                </div>
+                                <div class="paper-download"></div>
+                            </a>
+                        `).join('');
+                    }
+                }
+            } else {
+                // Render Papers for specific branch and semester
+                const branchPapers = papersData[branch] || {};
+                const dummyPapers = branchPapers[semester];
+                if (dummyPapers && dummyPapers.length > 0) {
+                    htmlToRender += dummyPapers.map(paper => `
+                        <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                            <div class="paper-info">
+                                <h3>${paper.title}</h3>
+                                <p>${branch} - Semester ${semester}</p>
+                            </div>
+                            <div class="paper-download"></div>
+                        </a>
+                    `).join('');
+                }
+            }
+
+            if (!htmlToRender) {
+                papersList.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; background: #fff; border: 1px solid #ddd; border-radius: 4px;">
+                        <h3 style="color: #ff5100;">No Papers Available</h3>
+                        <p style="color: #666; margin-top: 10px;">We are currently updating our database.</p>
+                    </div>
+                `;
+            } else {
+                papersList.innerHTML = htmlToRender;
+            }
+
+            if (scroll) {
+                setTimeout(() => {
+                    papersSection.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
     </script>
 </body>
 </html>
