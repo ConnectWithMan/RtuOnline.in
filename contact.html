@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./rtu.jpg"> 
+    <meta name="description" content="Contact RTU Online. Reach out to us via WhatsApp for any queries or paper contributions.">
+    <title>Contact Us | RTU Online</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.5;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: #ffffff;
+            color: #333;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: #007bff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 20px 2rem;
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            color: #333;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Content Section & WhatsApp Button */
+        .content-section {
+            padding: 4rem 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .content-section p {
+            margin-bottom: 2rem;
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: #ffffff;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(37, 211, 102, 0.2);
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe5d;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: #555;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #007bff;
+        }
+
+        /* Hamburger Menu & Responsive Design */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            .hamburger {
+                display: flex;
+            }
+            nav {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+            }
+            nav.active {
+                max-height: 250px;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                padding: 15px 0;
+            }
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            .hero {
+                padding: 3rem 15px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">RTU<span>Online</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/result">Result</a></li>
+                    <li><a href="/search">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're here to help! Get in touch with the RTUOnline.in team.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <p>If you have any questions, need to report an issue with a paper, or want to contribute to our PYQ database, feel free to reach out to us directly via WhatsApp.</p>
+            
+            <!-- Replace 910000000000 with your actual WhatsApp phone number with country code -->
+            <a href="https://wa.me/917878358707?text=Hi%20RTUOnline.in,%20I%20have%20a%20query!" target="_blank" class="whatsapp-btn">
+                💬 Chat with us on WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; RTU Online (rtuonline.in). All rights reserved.</p>
+            <p><a href="/about">About Us</a> | <a href="/contact">Contact Us </a> | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Script for Mobile Menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('#nav-menu ul li a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
