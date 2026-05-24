@@ -292,10 +292,9 @@
             </div>
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#papers">Papers</a></li>
-                    <li><a href="#">Result</a></li>
-                    <li><a href="#">Search</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/result">Result</a></li>
+                    <li><a href="/search">Search</a></li>
                 </ul>
             </nav>
         </div>
@@ -340,7 +339,7 @@
         <div class="container">
             <p>&copy; RTU Online (rtuonline.in). All rights reserved.</p>
             <p>Disclaimer: This is an independent platform built to help students and is not officially affiliated with Rajasthan Technical University.</p>
-            <p><a href="#">About Us</a> | <a href="#">Contact Us </a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p><a href="/about">About Us</a> | <a href="/contact">Contact Us </a> | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
         </div>
     </footer>
 
@@ -366,7 +365,7 @@
         const courseData = {
             "B.Tech": {
                 semesters: 8,
-                branches: ["1st Year", "CS Related", "Civil", "Mechanical"]
+                branches: ["1st Year", "Computer Science", "Civil", "Mechanical"]
             }
         };
 
@@ -386,7 +385,7 @@
                     { title: "Basic Mechanical Engg (2023)", code: "BME101" }
                 ]
             },
-            "CS Related": {
+            "Computer Science": {
                 "3": [
                     { title: "Data Structures & Algorithms (2023)", code: "CS301" },
                     { title: "Digital Electronics (2023)", code: "EC301" },
@@ -505,7 +504,7 @@
             
             const branches = courseData[course]?.branches || [];
             branchesGrid.innerHTML = branches.map(branch => {
-                const description = branch === "CS Related" ? "( IT, AI, AIDS, AIML )" : "Click to view semesters";
+                const description = branch === "Computer Science" ? "( IT, AI, AIDS, AIML )" : "Click to view semesters";
                 const activeClass = branch === activeBranch ? 'active' : '';
                 return `
                     <a href="#" class="card branch-card ${activeClass}">
@@ -542,7 +541,7 @@
             if (branch === "1st Year") {
                 startSemester = 1;
                 endSemester = 2;
-            } else if (["CS Related", "Civil", "Mechanical"].includes(branch)) {
+            } else if (["Computer Science", "Civil", "Mechanical"].includes(branch)) {
                 startSemester = 3; // Show the remaining 6 semesters (3 to 8) for core branches
                 endSemester = 8;
             }
