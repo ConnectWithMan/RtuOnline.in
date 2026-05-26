@@ -367,35 +367,34 @@
             }
         };
 
-        // Dummy data structure for syllabus based on branch and semester
         const syllabusData = {
             "1st Year": {
-                "1": [{ title: "B.Tech 1st Year Syllabus (Sem I)", code: "SYL-1" }],
-                "2": [{ title: "B.Tech 1st Year Syllabus (Sem II)", code: "SYL-2" }]
+                "1": [{ title: "B.Tech 1st Year Syllabus (Sem I)", code: "SYL-1", link: "https://rtuonline.in/syllabus/rtu-btech-1st-year-syllabus" }],
+                "2": [{ title: "B.Tech 1st Year Syllabus (Sem II)", code: "SYL-2", link: "https://rtuonline.in/syllabus/rtu-btech-1st-year-syllabus" }]
             },
             "Computer Science": {
-                "3": [{ title: "Computer Science 3rd Semester Syllabus", code: "CS-S3" }],
-                "4": [{ title: "Computer Science 4th Semester Syllabus", code: "CS-S4" }],
-                "5": [{ title: "Computer Science 5th Semester Syllabus", code: "CS-S5" }],
-                "6": [{ title: "Computer Science 6th Semester Syllabus", code: "CS-S6" }],
-                "7": [{ title: "Computer Science 7th Semester Syllabus", code: "CS-S7" }],
-                "8": [{ title: "Computer Science 8th Semester Syllabus", code: "CS-S8" }]
+                "3": [{ title: "Computer Science 3rd Semester Syllabus", code: "CS-S3", link: "/downloads/syllabus/cs-sem-3.pdf" }],
+                "4": [{ title: "Computer Science 4th Semester Syllabus", code: "CS-S4", link: "/downloads/syllabus/cs-sem-4.pdf" }],
+                "5": [{ title: "Computer Science 5th Semester Syllabus", code: "CS-S5", link: "/downloads/syllabus/cs-sem-5.pdf" }],
+                "6": [{ title: "Computer Science 6th Semester Syllabus", code: "CS-S6", link: "/downloads/syllabus/cs-sem-6.pdf" }],
+                "7": [{ title: "Computer Science 7th Semester Syllabus", code: "CS-S7", link: "/downloads/syllabus/cs-sem-7.pdf" }],
+                "8": [{ title: "Computer Science 8th Semester Syllabus", code: "CS-S8", link: "/downloads/syllabus/cs-sem-8.pdf" }]
             },
             "Civil": {
-                "3": [{ title: "Civil 3rd Semester Syllabus", code: "CE-S3" }],
-                "4": [{ title: "Civil 4th Semester Syllabus", code: "CE-S4" }],
-                "5": [{ title: "Civil 5th Semester Syllabus", code: "CE-S5" }],
-                "6": [{ title: "Civil 6th Semester Syllabus", code: "CE-S6" }],
-                "7": [{ title: "Civil 7th Semester Syllabus", code: "CE-S7" }],
-                "8": [{ title: "Civil 8th Semester Syllabus", code: "CE-S8" }]
+                "3": [{ title: "Civil 3rd Semester Syllabus", code: "CE-S3", link: "/downloads/syllabus/ce-sem-3.pdf" }],
+                "4": [{ title: "Civil 4th Semester Syllabus", code: "CE-S4", link: "/downloads/syllabus/ce-sem-4.pdf" }],
+                "5": [{ title: "Civil 5th Semester Syllabus", code: "CE-S5", link: "/downloads/syllabus/ce-sem-5.pdf" }],
+                "6": [{ title: "Civil 6th Semester Syllabus", code: "CE-S6", link: "/downloads/syllabus/ce-sem-6.pdf" }],
+                "7": [{ title: "Civil 7th Semester Syllabus", code: "CE-S7", link: "/downloads/syllabus/ce-sem-7.pdf" }],
+                "8": [{ title: "Civil 8th Semester Syllabus", code: "CE-S8", link: "/downloads/syllabus/ce-sem-8.pdf" }]
             },
             "Mechanical": {
-                "3": [{ title: "Mechanical 3rd Semester Syllabus", code: "ME-S3" }],
-                "4": [{ title: "Mechanical 4th Semester Syllabus", code: "ME-S4" }],
-                "5": [{ title: "Mechanical 5th Semester Syllabus", code: "ME-S5" }],
-                "6": [{ title: "Mechanical 6th Semester Syllabus", code: "ME-S6" }],
-                "7": [{ title: "Mechanical 7th Semester Syllabus", code: "ME-S7" }],
-                "8": [{ title: "Mechanical 8th Semester Syllabus", code: "ME-S8" }]
+                "3": [{ title: "Mechanical 3rd Semester Syllabus", code: "ME-S3", link: "/downloads/syllabus/me-sem-3.pdf" }],
+                "4": [{ title: "Mechanical 4th Semester Syllabus", code: "ME-S4", link: "/downloads/syllabus/me-sem-4.pdf" }],
+                "5": [{ title: "Mechanical 5th Semester Syllabus", code: "ME-S5", link: "/downloads/syllabus/me-sem-5.pdf" }],
+                "6": [{ title: "Mechanical 6th Semester Syllabus", code: "ME-S6", link: "/downloads/syllabus/me-sem-6.pdf" }],
+                "7": [{ title: "Mechanical 7th Semester Syllabus", code: "ME-S7", link: "/downloads/syllabus/me-sem-7.pdf" }],
+                "8": [{ title: "Mechanical 8th Semester Syllabus", code: "ME-S8", link: "/downloads/syllabus/me-sem-8.pdf" }]
             }
         };
 
@@ -517,7 +516,7 @@
                         const dummySyllabus = syllabusData[b][s];
                         if (dummySyllabus && dummySyllabus.length > 0) {
                             htmlToRender += dummySyllabus.map(syllabus => `
-                                <a href="https://rtuonline.in/" class="syllabus-row" target="_blank">
+                                <a href="${syllabus.link}" class="syllabus-row" target="_blank">
                                     <div class="syllabus-info">
                                         <h3>${syllabus.title}</h3>
                                         <p>${b} - Semester ${s}</p>
@@ -535,7 +534,7 @@
                     const dummySyllabus = branchSyllabus[s];
                     if (dummySyllabus && dummySyllabus.length > 0) {
                         htmlToRender += dummySyllabus.map(syllabus => `
-                            <a href="https://rtuonline.in/" class="syllabus-row" target="_blank">
+                            <a href="${syllabus.link}" class="syllabus-row" target="_blank">
                                 <div class="syllabus-info">
                                     <h3>${syllabus.title}</h3>
                                     <p>${branch} - Semester ${s}</p>
@@ -551,7 +550,7 @@
                 const dummySyllabus = branchSyllabus[semester];
                 if (dummySyllabus && dummySyllabus.length > 0) {
                     htmlToRender += dummySyllabus.map(syllabus => `
-                        <a href="https://rtuonline.in/" class="syllabus-row" target="_blank">
+                        <a href="${syllabus.link}" class="syllabus-row" target="_blank">
                             <div class="syllabus-info">
                                 <h3>${syllabus.title}</h3>
                                 <p>${branch} - Semester ${semester}</p>
