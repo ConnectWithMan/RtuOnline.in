@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -376,7 +377,7 @@
         const courseData = {
             "B.Tech": {
                 semesters: 8,
-                branches: ["1st Year", "Computer Science", "Civil", "Mechanical"]
+                branches: ["1st Year", "Computer Science", "IT", "Electrical", "ECE", "EIC", "PI", "Civil", "Mechanical"]
             }
         };
 
@@ -384,109 +385,234 @@
         const papersData = {
             "1st Year": {
                 "1": [
-                    { title: "Engineering Mathematics-I (2023)", code: "MAT101" },
-                    { title: "Engineering Physics (2023)", code: "PHY101" },
-                    { title: "Basic Electrical Engg (2023)", code: "BEE101" },
-                    { title: "Communication Skills (2023)", code: "ENG101" }
+                    { title: "Engineering Mathematics-I (2023)", url: "https://rtuonline.in/papers/mat101" },
+                    { title: "Engineering Physics (2023)", url: "https://rtuonline.in/papers/phy101" },
+                    { title: "Basic Electrical Engg (2023)", url: "https://rtuonline.in/papers/bee101" },
+                    { title: "Communication Skills (2023)", url: "https://rtuonline.in/papers/eng101" }
                 ],
                 "2": [
-                    { title: "Engineering Mathematics-II (2023)", code: "MAT102" },
-                    { title: "Engineering Chemistry (2023)", code: "CHY101" },
-                    { title: "Programming for PS (2023)", code: "CS101" },
-                    { title: "Basic Mechanical Engg (2023)", code: "BME101" }
+                    { title: "Engineering Mathematics-II (2023)", url: "https://rtuonline.in/papers/mat102" },
+                    { title: "Engineering Chemistry (2023)", url: "https://rtuonline.in/papers/chy101" },
+                    { title: "Programming for PS (2023)", url: "https://rtuonline.in/papers/cs101" },
+                    { title: "Basic Mechanical Engg (2023)", url: "https://rtuonline.in/papers/bme101" }
                 ]
             },
             "Computer Science": {
                 "3": [
-                    { title: "Data Structures & Algorithms (2023)", code: "CS301" },
-                    { title: "Digital Electronics (2023)", code: "EC301" },
-                    { title: "Software Engineering (2023)", code: "CS302" }
+                    { title: "Data Structures & Algorithms (2023)", url: "https://rtuonline.in/papers/cs301" },
+                    { title: "Digital Electronics (2023)", url: "https://rtuonline.in/papers/ec301" },
+                    { title: "Software Engineering (2023)", url: "https://rtuonline.in/papers/cs302" }
                 ],
                 "4": [
-                    { title: "Microprocessors (2023)", code: "CS401" },
-                    { title: "Database Management (2023)", code: "CS402" },
-                    { title: "Theory of Computation (2023)", code: "CS403" }
+                    { title: "Microprocessors (2023)", url: "https://rtuonline.in/papers/cs401" },
+                    { title: "Database Management (2023)", url: "https://rtuonline.in/papers/cs402" },
+                    { title: "Theory of Computation (2023)", url: "https://rtuonline.in/papers/cs403" }
                 ],
                 "5": [
-                    { title: "Operating Systems (2023)", code: "CS501" },
-                    { title: "Computer Graphics (2023)", code: "CS502" },
-                    { title: "Compiler Design (2023)", code: "CS503" }
+                    { title: "Operating Systems (2023)", url: "https://rtuonline.in/papers/cs501" },
+                    { title: "Computer Graphics (2023)", url: "https://rtuonline.in/papers/cs502" },
+                    { title: "Compiler Design (2023)", url: "https://rtuonline.in/papers/cs503" }
                 ],
                 "6": [
-                    { title: "Artificial Intelligence (2023)", code: "CS601" },
-                    { title: "Computer Networks (2023)", code: "CS602" },
-                    { title: "Cloud Computing (2023)", code: "CS603" }
+                    { title: "Artificial Intelligence (2023)", url: "https://rtuonline.in/papers/cs601" },
+                    { title: "Computer Networks (2023)", url: "https://rtuonline.in/papers/cs602" },
+                    { title: "Cloud Computing (2023)", url: "https://rtuonline.in/papers/cs603" }
                 ],
                 "7": [
-                    { title: "Machine Learning (2023)", code: "CS701" },
-                    { title: "Internet of Things (2023)", code: "CS702" },
-                    { title: "Cyber Security (2023)", code: "CS703" }
+                    { title: "Machine Learning (2023)", url: "https://rtuonline.in/papers/cs701" },
+                    { title: "Internet of Things (2023)", url: "https://rtuonline.in/papers/cs702" },
+                    { title: "Cyber Security (2023)", url: "https://rtuonline.in/papers/cs703" }
                 ],
                 "8": [
-                    { title: "Big Data Analytics (2023)", code: "CS801" },
-                    { title: "Data Science (2023)", code: "CS802" }
+                    { title: "Big Data Analytics (2023)", url: "https://rtuonline.in/papers/cs801" },
+                    { title: "Data Science (2023)", url: "https://rtuonline.in/papers/cs802" }
+                ]
+            },
+            "IT": {
+                "3": [
+                    { title: "Data Structures & Algorithms (2023)", url: "https://rtuonline.in/papers/it301" },
+                    { title: "Object Oriented Programming (2023)", url: "https://rtuonline.in/papers/it302" }
+                ],
+                "4": [
+                    { title: "Database Management Systems (2023)", url: "https://rtuonline.in/papers/it401" },
+                    { title: "Data Communication (2023)", url: "https://rtuonline.in/papers/it402" }
+                ],
+                "5": [
+                    { title: "Information Security (2023)", url: "https://rtuonline.in/papers/it501" },
+                    { title: "Operating Systems (2023)", url: "https://rtuonline.in/papers/it502" }
+                ],
+                "6": [
+                    { title: "Web Technology (2023)", url: "https://rtuonline.in/papers/it601" },
+                    { title: "Digital Image Processing (2023)", url: "https://rtuonline.in/papers/it602" }
+                ],
+                "7": [
+                    { title: "Internet of Things (2023)", url: "https://rtuonline.in/papers/it701" },
+                    { title: "Cloud Computing (2023)", url: "https://rtuonline.in/papers/it702" }
+                ],
+                "8": [
+                    { title: "Big Data Analytics (2023)", url: "https://rtuonline.in/papers/it801" }
+                ]
+            },
+            "Electrical": {
+                "3": [
+                    { title: "Electrical Circuit Analysis (2023)", url: "https://rtuonline.in/papers/ee301" },
+                    { title: "Electrical Machines-I (2023)", url: "https://rtuonline.in/papers/ee302" }
+                ],
+                "4": [
+                    { title: "Electrical Machines-II (2023)", url: "https://rtuonline.in/papers/ee401" },
+                    { title: "Power Electronics (2023)", url: "https://rtuonline.in/papers/ee402" }
+                ],
+                "5": [
+                    { title: "Control Systems (2023)", url: "https://rtuonline.in/papers/ee501" },
+                    { title: "Power System-I (2023)", url: "https://rtuonline.in/papers/ee502" }
+                ],
+                "6": [
+                    { title: "Power System-II (2023)", url: "https://rtuonline.in/papers/ee601" },
+                    { title: "Electric Drives (2023)", url: "https://rtuonline.in/papers/ee602" }
+                ],
+                "7": [
+                    { title: "Renewable Energy Sources (2023)", url: "https://rtuonline.in/papers/ee701" },
+                    { title: "Power System Planning (2023)", url: "https://rtuonline.in/papers/ee702" }
+                ],
+                "8": [
+                    { title: "Smart Grid Technology (2023)", url: "https://rtuonline.in/papers/ee801" }
+                ]
+            },
+            "ECE": {
+                "3": [
+                    { title: "Electronic Devices (2023)", url: "https://rtuonline.in/papers/ec301" },
+                    { title: "Digital System Design (2023)", url: "https://rtuonline.in/papers/ec302" }
+                ],
+                "4": [
+                    { title: "Analog Circuits (2023)", url: "https://rtuonline.in/papers/ec401" },
+                    { title: "Microcontrollers (2023)", url: "https://rtuonline.in/papers/ec402" }
+                ],
+                "5": [
+                    { title: "Signals & Systems (2023)", url: "https://rtuonline.in/papers/ec501" },
+                    { title: "Control Systems (2023)", url: "https://rtuonline.in/papers/ec502" }
+                ],
+                "6": [
+                    { title: "Digital Signal Processing (2023)", url: "https://rtuonline.in/papers/ec601" },
+                    { title: "Antennas & Propagation (2023)", url: "https://rtuonline.in/papers/ec602" }
+                ],
+                "7": [
+                    { title: "VLSI Design (2023)", url: "https://rtuonline.in/papers/ec701" },
+                    { title: "Optical Fiber Communication (2023)", url: "https://rtuonline.in/papers/ec702" }
+                ],
+                "8": [
+                    { title: "Wireless Communication (2023)", url: "https://rtuonline.in/papers/ec801" }
+                ]
+            },
+            "EIC": {
+                "3": [
+                    { title: "Electronic Measurements (2023)", url: "https://rtuonline.in/papers/ei301" },
+                    { title: "Sensors and Transducers (2023)", url: "https://rtuonline.in/papers/ei302" }
+                ],
+                "4": [
+                    { title: "Industrial Instrumentation (2023)", url: "https://rtuonline.in/papers/ei401" },
+                    { title: "Linear Integrated Circuits (2023)", url: "https://rtuonline.in/papers/ei402" }
+                ],
+                "5": [
+                    { title: "Control System Components (2023)", url: "https://rtuonline.in/papers/ei501" },
+                    { title: "Microprocessors (2023)", url: "https://rtuonline.in/papers/ei502" }
+                ],
+                "6": [
+                    { title: "Process Control (2023)", url: "https://rtuonline.in/papers/ei601" },
+                    { title: "Analytical Instrumentation (2023)", url: "https://rtuonline.in/papers/ei602" }
+                ],
+                "7": [
+                    { title: "Biomedical Instrumentation (2023)", url: "https://rtuonline.in/papers/ei701" },
+                    { title: "Virtual Instrumentation (2023)", url: "https://rtuonline.in/papers/ei702" }
+                ],
+                "8": [
+                    { title: "Opto Electronics (2023)", url: "https://rtuonline.in/papers/ei801" }
+                ]
+            },
+            "PI": {
+                "3": [
+                    { title: "Manufacturing Processes-I (2023)", url: "https://rtuonline.in/papers/pi301" },
+                    { title: "Thermodynamics (2023)", url: "https://rtuonline.in/papers/pi302" }
+                ],
+                "4": [
+                    { title: "Kinematics of Machines (2023)", url: "https://rtuonline.in/papers/pi401" },
+                    { title: "Fluid Mechanics & Machinery (2023)", url: "https://rtuonline.in/papers/pi402" }
+                ],
+                "5": [
+                    { title: "Dynamics of Machines (2023)", url: "https://rtuonline.in/papers/pi501" },
+                    { title: "Metal Cutting & Tool Design (2023)", url: "https://rtuonline.in/papers/pi502" }
+                ],
+                "6": [
+                    { title: "Metrology and Inspection (2023)", url: "https://rtuonline.in/papers/pi601" },
+                    { title: "Machine Design (2023)", url: "https://rtuonline.in/papers/pi602" }
+                ],
+                "7": [
+                    { title: "Operations Research (2023)", url: "https://rtuonline.in/papers/pi701" },
+                    { title: "CAD/CAM (2023)", url: "https://rtuonline.in/papers/pi702" }
+                ],
+                "8": [
+                    { title: "Computer Integrated Manufacturing (2023)", url: "https://rtuonline.in/papers/pi801" }
                 ]
             },
             "Civil": {
                 "3": [
-                    { title: "Fluid Mechanics (2023)", code: "CE301" },
-                    { title: "Building Materials (2023)", code: "CE302" },
-                    { title: "Solid Mechanics (2023)", code: "CE303" }
+                    { title: "Fluid Mechanics (2023)", url: "https://rtuonline.in/papers/ce301" },
+                    { title: "Building Materials (2023)", url: "https://rtuonline.in/papers/ce302" },
+                    { title: "Solid Mechanics (2023)", url: "https://rtuonline.in/papers/ce303" }
                 ],
                 "4": [
-                    { title: "Structural Analysis-I (2023)", code: "CE401" },
-                    { title: "Concrete Technology (2023)", code: "CE402" },
-                    { title: "Surveying-I (2023)", code: "CE403" }
+                    { title: "Structural Analysis-I (2023)", url: "https://rtuonline.in/papers/ce401" },
+                    { title: "Concrete Technology (2023)", url: "https://rtuonline.in/papers/ce402" },
+                    { title: "Surveying-I (2023)", url: "https://rtuonline.in/papers/ce403" }
                 ],
                 "5": [
-                    { title: "Structural Analysis-II (2023)", code: "CE501" },
-                    { title: "Design of Concrete Structures-I (2023)", code: "CE502" },
-                    { title: "Geotechnical Engg-I (2023)", code: "CE503" }
+                    { title: "Structural Analysis-II (2023)", url: "https://rtuonline.in/papers/ce501" },
+                    { title: "Design of Concrete Structures-I (2023)", url: "https://rtuonline.in/papers/ce502" },
+                    { title: "Geotechnical Engg-I (2023)", url: "https://rtuonline.in/papers/ce503" }
                 ],
                 "6": [
-                    { title: "Design of Steel Structures-I (2023)", code: "CE601" },
-                    { title: "Environmental Engg-I (2023)", code: "CE602" },
-                    { title: "Highway Engineering (2023)", code: "CE603" }
+                    { title: "Design of Steel Structures-I (2023)", url: "https://rtuonline.in/papers/ce601" },
+                    { title: "Environmental Engg-I (2023)", url: "https://rtuonline.in/papers/ce602" },
+                    { title: "Highway Engineering (2023)", url: "https://rtuonline.in/papers/ce603" }
                 ],
                 "7": [
-                    { title: "Water Resources Engg (2023)", code: "CE701" },
-                    { title: "Design of Steel Structures-II (2023)", code: "CE702" },
-                    { title: "Estimation and Costing (2023)", code: "CE703" }
+                    { title: "Water Resources Engg (2023)", url: "https://rtuonline.in/papers/ce701" },
+                    { title: "Design of Steel Structures-II (2023)", url: "https://rtuonline.in/papers/ce702" },
+                    { title: "Estimation and Costing (2023)", url: "https://rtuonline.in/papers/ce703" }
                 ],
                 "8": [
-                    { title: "Bridge Engineering (2023)", code: "CE801" },
-                    { title: "Project Planning (2023)", code: "CE802" }
+                    { title: "Bridge Engineering (2023)", url: "https://rtuonline.in/papers/ce801" },
+                    { title: "Project Planning (2023)", url: "https://rtuonline.in/papers/ce802" }
                 ]
             },
             "Mechanical": {
                 "3": [
-                    { title: "Thermodynamics (2023)", code: "ME301" },
-                    { title: "Manufacturing Processes (2023)", code: "ME302" },
-                    { title: "Material Science (2023)", code: "ME303" }
+                    { title: "Thermodynamics (2023)", url: "https://rtuonline.in/papers/me301" },
+                    { title: "Manufacturing Processes (2023)", url: "https://rtuonline.in/papers/me302" },
+                    { title: "Material Science (2023)", url: "https://rtuonline.in/papers/me303" }
                 ],
                 "4": [
-                    { title: "Kinematics of Machines (2023)", code: "ME401" },
-                    { title: "Fluid Mechanics (2023)", code: "ME402" },
-                    { title: "Machining (2023)", code: "ME403" }
+                    { title: "Kinematics of Machines (2023)", url: "https://rtuonline.in/papers/me401" },
+                    { title: "Fluid Mechanics (2023)", url: "https://rtuonline.in/papers/me402" },
+                    { title: "Machining (2023)", url: "https://rtuonline.in/papers/me403" }
                 ],
                 "5": [
-                    { title: "Dynamics of Machines (2023)", code: "ME501" },
-                    { title: "Heat Transfer (2023)", code: "ME502" },
-                    { title: "Design of Machine Elements-I (2023)", code: "ME503" }
+                    { title: "Dynamics of Machines (2023)", url: "https://rtuonline.in/papers/me501" },
+                    { title: "Heat Transfer (2023)", url: "https://rtuonline.in/papers/me502" },
+                    { title: "Design of Machine Elements-I (2023)", url: "https://rtuonline.in/papers/me503" }
                 ],
                 "6": [
-                    { title: "Design of Machine Elements-II (2023)", code: "ME601" },
-                    { title: "Automobile Engineering (2023)", code: "ME602" },
-                    { title: "Mechatronics (2023)", code: "ME603" }
+                    { title: "Design of Machine Elements-II (2023)", url: "https://rtuonline.in/papers/me601" },
+                    { title: "Automobile Engineering (2023)", url: "https://rtuonline.in/papers/me602" },
+                    { title: "Mechatronics (2023)", url: "https://rtuonline.in/papers/me603" }
                 ],
                 "7": [
-                    { title: "CAD/CAM (2023)", code: "ME701" },
-                    { title: "Power Plant Engineering (2023)", code: "ME702" },
-                    { title: "Renewable Energy (2023)", code: "ME703" }
+                    { title: "CAD/CAM (2023)", url: "https://rtuonline.in/papers/me701" },
+                    { title: "Power Plant Engineering (2023)", url: "https://rtuonline.in/papers/me702" },
+                    { title: "Renewable Energy (2023)", url: "https://rtuonline.in/papers/me703" }
                 ],
                 "8": [
-                    { title: "Quality Assurance (2023)", code: "ME801" },
-                    { title: "Robotics (2023)", code: "ME802" }
+                    { title: "Quality Assurance (2023)", url: "https://rtuonline.in/papers/me801" },
+                    { title: "Robotics (2023)", url: "https://rtuonline.in/papers/me802" }
                 ]
             }
         };
@@ -515,7 +641,7 @@
             
             const branches = courseData[course]?.branches || [];
             branchesGrid.innerHTML = branches.map(branch => {
-                const description = branch === "Computer Science" ? "( IT, AI, AIDS, AIML )" : "Click to view semesters";
+                const description = branch === "Computer Science" ? "( AI, AIDS, AIML )" : "Click to view semesters";
                 const activeClass = branch === activeBranch ? 'active' : '';
                 return `
                     <a href="#" class="card branch-card ${activeClass}">
@@ -552,7 +678,7 @@
             if (branch === "1st Year") {
                 startSemester = 1;
                 endSemester = 2;
-            } else if (["Computer Science", "Civil", "Mechanical"].includes(branch)) {
+            } else if (["Computer Science", "IT", "Electrical", "ECE", "EIC", "PI", "Civil", "Mechanical"].includes(branch)) {
                 startSemester = 3; // Show the remaining 6 semesters (3 to 8) for core branches
                 endSemester = 8;
             }
@@ -609,7 +735,7 @@
                         const dummyPapers = papersData[b][s];
                         if (dummyPapers && dummyPapers.length > 0) {
                             htmlToRender += dummyPapers.map(paper => `
-                                <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                                <a href="${paper.url}" class="paper-row" target="_blank">
                                     <div class="paper-info">
                                         <h3>${paper.title}</h3>
                                         <p>${b} - Semester ${s}</p>
@@ -627,7 +753,7 @@
                     const dummyPapers = branchPapers[s];
                     if (dummyPapers && dummyPapers.length > 0) {
                         htmlToRender += dummyPapers.map(paper => `
-                            <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                            <a href="${paper.url}" class="paper-row" target="_blank">
                                 <div class="paper-info">
                                     <h3>${paper.title}</h3>
                                     <p>${branch} - Semester ${s}</p>
@@ -643,7 +769,7 @@
                 const dummyPapers = branchPapers[semester];
                 if (dummyPapers && dummyPapers.length > 0) {
                     htmlToRender += dummyPapers.map(paper => `
-                        <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                        <a href="${paper.url}" class="paper-row" target="_blank">
                             <div class="paper-info">
                                 <h3>${paper.title}</h3>
                                 <p>${branch} - Semester ${semester}</p>
