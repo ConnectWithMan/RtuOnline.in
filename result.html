@@ -1,27 +1,44 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./rtu.jpg"> 
-    <meta name="description" content="Download RTU Previous Year Question Papers (RTU PYQ) for B.Tech. Get the largest collection of Rajasthan Technical University past papers to boost your exam preparation.">
+    <meta name="description" content="Check your latest RTU Result for B.Tech, MBA, MCA, and other programs. RTU Result - RTU Result Download Portal.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="RTU Previous Year Question Papers (PYQ) | RTU Online">
-    <meta property="og:description" content="Download RTU Previous Year Question Papers (RTU PYQ) for B.Tech. Get the largest collection of Rajasthan Technical University past papers.">
-    <meta property="og:url" content="https://rtuonline.in/">
+    <meta property="og:title" content="RTU Result - RTU Result Download Portal | RTU Online">
+    <meta property="og:description" content="Check your latest RTU Result for B.Tech, MBA, MCA, and other programs. Get Rajasthan Technical University semester main and revaluation results instantly.">
+    <meta property="og:url" content="https://rtuonline.in/result">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://rtuonline.in/">
-    <title>RTU Previous Year Question Papers (PYQ) | RTU Online</title>
+    <link rel="canonical" href="https://rtuonline.in/result">
+    <title>RTU Result - RTU Result Download Portal | RTU Online</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "RTU Online",
-      "url": "https://rtuonline.in/",
-      "description": "Download RTU Previous Year Question Papers (RTU PYQ) for B.Tech. Get the largest collection of Rajasthan Technical University past papers."
+      "@type": "WebPage",
+      "name": "RTU Result",
+      "url": "https://rtuonline.in/result",
+      "description": "Official link to check the latest RTU Result for all semesters including B.Tech, MBA, and MCA programs provided by Rajasthan Technical University.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RTU Online"
+      }
     }
     </script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3WFB85DDZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3WFB85DDZ');
+</script>
+    
     <style>
         /* CSS Reset and Base Styles */
         * {
@@ -293,7 +310,8 @@
             <nav id="nav-menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/result">Result</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
                     <li><a href="/search">Search</a></li>
                 </ul>
             </nav>
@@ -304,32 +322,24 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Download RTU Previous Year Question Papers (RTU PYQ)</h1>
-                <p>The largest collection of B.Tech previous year question papers (PYQ) for Rajasthan Technical University students. Start your exam preparation today.</p>
+                <h1>RTU Result</h1>
+                <p>Check the latest main and revaluation results for RTU B.Tech, MBA, MCA, and other programs.</p>
             </div>
         </section>
 
-        <!-- Branches Section -->
-        <section class="courses" id="branches-section">
+        <!-- Courses Section -->
+        <section class="courses" id="courses-section">
             <div class="container">
-                <h2 id="branches-title">Select Your Branch</h2>
-                <div class="grid" id="branches-grid"></div>
+                <h2 id="courses-title">Select Course</h2>
+                <div class="grid" id="courses-grid"></div>
             </div>
         </section>
 
-        <!-- Semesters Section -->
-        <section class="courses courses-alt" id="semesters-section" style="display: none;">
+        <!-- Results Section -->
+        <section class="courses" id="results-section">
             <div class="container">
-                <h2 id="semesters-title">Select Semester</h2>
-                <div class="grid" id="semesters-grid"></div>
-            </div>
-        </section>
-
-        <!-- Papers Section -->
-        <section class="courses" id="papers-section">
-            <div class="container">
-                <h2 id="papers-title">Download Papers</h2>
-                <div class="list-layout" id="papers-list"></div>
+                <h2 id="results-title">Check Results</h2>
+                <div class="list-layout" id="results-list"></div>
             </div>
         </section>
     </main>
@@ -360,302 +370,132 @@
             });
         });
 
-        // Dynamic Course Navigation Logic
-        const courseData = {
-            "B.Tech": {
-                semesters: 8,
-                branches: ["1st Year", "Computer Science", "Civil", "Mechanical"]
-            }
+        const resultsData = {
+            "B.Tech": [
+                { title: "B.Tech 8th Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 7th Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 6th Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 5th Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 4th Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 3rd Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 2nd Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "B.Tech 1st Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" }
+            ],
+            "MBA": [
+                { title: "MBA 4th Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "MBA 3rd Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "MBA 2nd Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "MBA 1st Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" }
+            ],
+            "MCA": [
+                { title: "MCA 4th Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "MCA 3rd Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "MCA 2nd Sem Main Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" },
+                { title: "MCA 1st Sem Reval Result 2024", url: "https://rtu.sumsraj.com/Exam/Report/DownloadGradesheet.aspx" }
+            ]
         };
 
-        // Dummy data structure for papers based on branch and semester
-        const papersData = {
-            "1st Year": {
-                "1": [
-                    { title: "Engineering Mathematics-I (2023)", code: "MAT101" },
-                    { title: "Engineering Physics (2023)", code: "PHY101" },
-                    { title: "Basic Electrical Engg (2023)", code: "BEE101" },
-                    { title: "Communication Skills (2023)", code: "ENG101" }
-                ],
-                "2": [
-                    { title: "Engineering Mathematics-II (2023)", code: "MAT102" },
-                    { title: "Engineering Chemistry (2023)", code: "CHY101" },
-                    { title: "Programming for PS (2023)", code: "CS101" },
-                    { title: "Basic Mechanical Engg (2023)", code: "BME101" }
-                ]
-            },
-            "Computer Science": {
-                "3": [
-                    { title: "Data Structures & Algorithms (2023)", code: "CS301" },
-                    { title: "Digital Electronics (2023)", code: "EC301" },
-                    { title: "Software Engineering (2023)", code: "CS302" }
-                ],
-                "4": [
-                    { title: "Microprocessors (2023)", code: "CS401" },
-                    { title: "Database Management (2023)", code: "CS402" },
-                    { title: "Theory of Computation (2023)", code: "CS403" }
-                ],
-                "5": [
-                    { title: "Operating Systems (2023)", code: "CS501" },
-                    { title: "Computer Graphics (2023)", code: "CS502" },
-                    { title: "Compiler Design (2023)", code: "CS503" }
-                ],
-                "6": [
-                    { title: "Artificial Intelligence (2023)", code: "CS601" },
-                    { title: "Computer Networks (2023)", code: "CS602" },
-                    { title: "Cloud Computing (2023)", code: "CS603" }
-                ],
-                "7": [
-                    { title: "Machine Learning (2023)", code: "CS701" },
-                    { title: "Internet of Things (2023)", code: "CS702" },
-                    { title: "Cyber Security (2023)", code: "CS703" }
-                ],
-                "8": [
-                    { title: "Big Data Analytics (2023)", code: "CS801" },
-                    { title: "Data Science (2023)", code: "CS802" }
-                ]
-            },
-            "Civil": {
-                "3": [
-                    { title: "Fluid Mechanics (2023)", code: "CE301" },
-                    { title: "Building Materials (2023)", code: "CE302" },
-                    { title: "Solid Mechanics (2023)", code: "CE303" }
-                ],
-                "4": [
-                    { title: "Structural Analysis-I (2023)", code: "CE401" },
-                    { title: "Concrete Technology (2023)", code: "CE402" },
-                    { title: "Surveying-I (2023)", code: "CE403" }
-                ],
-                "5": [
-                    { title: "Structural Analysis-II (2023)", code: "CE501" },
-                    { title: "Design of Concrete Structures-I (2023)", code: "CE502" },
-                    { title: "Geotechnical Engg-I (2023)", code: "CE503" }
-                ],
-                "6": [
-                    { title: "Design of Steel Structures-I (2023)", code: "CE601" },
-                    { title: "Environmental Engg-I (2023)", code: "CE602" },
-                    { title: "Highway Engineering (2023)", code: "CE603" }
-                ],
-                "7": [
-                    { title: "Water Resources Engg (2023)", code: "CE701" },
-                    { title: "Design of Steel Structures-II (2023)", code: "CE702" },
-                    { title: "Estimation and Costing (2023)", code: "CE703" }
-                ],
-                "8": [
-                    { title: "Bridge Engineering (2023)", code: "CE801" },
-                    { title: "Project Planning (2023)", code: "CE802" }
-                ]
-            },
-            "Mechanical": {
-                "3": [
-                    { title: "Thermodynamics (2023)", code: "ME301" },
-                    { title: "Manufacturing Processes (2023)", code: "ME302" },
-                    { title: "Material Science (2023)", code: "ME303" }
-                ],
-                "4": [
-                    { title: "Kinematics of Machines (2023)", code: "ME401" },
-                    { title: "Fluid Mechanics (2023)", code: "ME402" },
-                    { title: "Machining (2023)", code: "ME403" }
-                ],
-                "5": [
-                    { title: "Dynamics of Machines (2023)", code: "ME501" },
-                    { title: "Heat Transfer (2023)", code: "ME502" },
-                    { title: "Design of Machine Elements-I (2023)", code: "ME503" }
-                ],
-                "6": [
-                    { title: "Design of Machine Elements-II (2023)", code: "ME601" },
-                    { title: "Automobile Engineering (2023)", code: "ME602" },
-                    { title: "Mechatronics (2023)", code: "ME603" }
-                ],
-                "7": [
-                    { title: "CAD/CAM (2023)", code: "ME701" },
-                    { title: "Power Plant Engineering (2023)", code: "ME702" },
-                    { title: "Renewable Energy (2023)", code: "ME703" }
-                ],
-                "8": [
-                    { title: "Quality Assurance (2023)", code: "ME801" },
-                    { title: "Robotics (2023)", code: "ME802" }
-                ]
-            }
-        };
-
-        const branchesSection = document.getElementById('branches-section');
-        const branchesTitle = document.getElementById('branches-title');
-        const branchesGrid = document.getElementById('branches-grid');
+        const coursesSection = document.getElementById('courses-section');
+        const coursesTitle = document.getElementById('courses-title');
+        const coursesGrid = document.getElementById('courses-grid');
         
-        const semestersSection = document.getElementById('semesters-section');
-        const semestersTitle = document.getElementById('semesters-title');
-        const semestersGrid = document.getElementById('semesters-grid');
-        
-        const papersSection = document.getElementById('papers-section');
-        const papersTitle = document.getElementById('papers-title');
-        const papersList = document.getElementById('papers-list');
+        const resultsSection = document.getElementById('results-section');
+        const resultsTitle = document.getElementById('results-title');
+        const resultsList = document.getElementById('results-list');
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Initialize default view with no selections and all papers
-            renderBranches('B.Tech', null, false);
-            semestersSection.style.display = 'none';
-            renderPapers('B.Tech', null, null, false);
+            renderCourses(null, false);
+            renderResults(null, false);
         });
 
-        function renderBranches(course, activeBranch = null, scroll = true) {
-            branchesTitle.innerText = `Select Your Branch`;
+        function renderCourses(activeCourse = null, scroll = true) {
+            coursesSection.style.display = 'block';
+            coursesTitle.innerText = `Select Course for RTU Result`;
+
+            const courses = Object.keys(resultsData);
+            let coursesHTML = '';
             
-            const branches = courseData[course]?.branches || [];
-            branchesGrid.innerHTML = branches.map(branch => {
-                const description = branch === "Computer Science" ? "( IT, AI, AIDS, AIML )" : "Click to view semesters";
-                const activeClass = branch === activeBranch ? 'active' : '';
-                return `
-                    <a href="#" class="card branch-card ${activeClass}">
-                        <h3>${branch}</h3>
-                        <p>${description}</p>
+            courses.forEach(course => {
+                const activeClass = course === activeCourse ? 'active' : '';
+                coursesHTML += `
+                    <a href="#results-section" class="card semester-card ${activeClass}" data-course="${course}">
+                        <h3>${course}</h3>
+                        <p>View RTU Result</p>
                     </a>
                 `;
-            }).join('');
+            });
+            coursesGrid.innerHTML = coursesHTML;
 
             if (scroll) {
                 setTimeout(() => {
-                    branchesSection.scrollIntoView({ behavior: 'smooth' });
+                    coursesSection.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
             }
 
-            branchesGrid.querySelectorAll('.branch-card').forEach(card => {
+            coursesGrid.querySelectorAll('.semester-card').forEach(card => {
                 card.addEventListener('click', (e) => {
                     e.preventDefault();
-                    branchesGrid.querySelectorAll('.branch-card').forEach(c => c.classList.remove('active'));
+                    coursesGrid.querySelectorAll('.semester-card').forEach(c => c.classList.remove('active'));
                     card.classList.add('active');
-                    const branchName = card.querySelector('h3').innerText;
-                    renderSemesters(course, branchName, null, true);
+                    const course = card.getAttribute('data-course');
+                    renderResults(course);
                 });
             });
         }
 
-        function renderSemesters(course, branch, activeSemester = null, scroll = true) {
-            semestersSection.style.display = 'block';
-            semestersTitle.innerText = `Select Semester (${branch})`;
-            
-            let startSemester = 1;
-            let endSemester = courseData[course]?.semesters || 8;
-
-            if (branch === "1st Year") {
-                startSemester = 1;
-                endSemester = 2;
-            } else if (["Computer Science", "Civil", "Mechanical"].includes(branch)) {
-                startSemester = 3; // Show the remaining 6 semesters (3 to 8) for core branches
-                endSemester = 8;
-            }
-
-            let semestersHTML = '';
-            for (let i = startSemester; i <= endSemester; i++) {
-                const activeClass = i == activeSemester ? 'active' : '';
-                semestersHTML += `
-                    <a href="#papers" class="card semester-card ${activeClass}" data-semester="${i}">
-                        <h3>Semester ${i}</h3>
-                        <p>View question papers</p>
-                    </a>
-                `;
-            }
-            semestersGrid.innerHTML = semestersHTML;
-            
-            // Show all papers for this branch initially if no semester is chosen
-            if (activeSemester === null) {
-                renderPapers(course, branch, null, false);
-            }
-
-            if (scroll) {
-                setTimeout(() => {
-                    semestersSection.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-            }
-
-            semestersGrid.querySelectorAll('.semester-card').forEach(card => {
-                card.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    semestersGrid.querySelectorAll('.semester-card').forEach(c => c.classList.remove('active'));
-                    card.classList.add('active');
-                    const semester = card.getAttribute('data-semester');
-                    renderPapers(course, branch, semester);
-                });
-            });
-        }
-
-        function renderPapers(course, branch = null, semester = null, scroll = true) {
-            if (!branch && !semester) {
-                papersTitle.innerText = `Download All RTU PYQ Papers`;
-            } else if (branch && !semester) {
-                papersTitle.innerText = `Download RTU PYQ (${course} - ${branch})`;
+        function renderResults(course = null, scroll = true) {
+            if (!course) {
+                resultsTitle.innerText = `All Recent RTU Results`;
             } else {
-                papersTitle.innerText = `Download RTU PYQ (${course} - ${branch} - Sem ${semester})`;
+                resultsTitle.innerText = `${course} RTU Result`;
             }
             
             let htmlToRender = '';
 
-            if (!branch && !semester) {
-                // Render All papers
-                for (const b in papersData) {
-                    for (const s in papersData[b]) {
-                        const dummyPapers = papersData[b][s];
-                        if (dummyPapers && dummyPapers.length > 0) {
-                            htmlToRender += dummyPapers.map(paper => `
-                                <a href="https://rtuonline.in/" class="paper-row" target="_blank">
-                                    <div class="paper-info">
-                                        <h3>${paper.title}</h3>
-                                        <p>${b} - Semester ${s}</p>
-                                    </div>
-                                    <div class="paper-download"></div>
-                                </a>
-                            `).join('');
-                        }
-                    }
-                }
-            } else if (branch && !semester) {
-                // Render All papers for a specific branch
-                const branchPapers = papersData[branch] || {};
-                for (const s in branchPapers) {
-                    const dummyPapers = branchPapers[s];
-                    if (dummyPapers && dummyPapers.length > 0) {
-                        htmlToRender += dummyPapers.map(paper => `
-                            <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+            if (!course) {
+                for (const c in resultsData) {
+                    const courseResults = resultsData[c];
+                    if (courseResults && courseResults.length > 0) {
+                        htmlToRender += courseResults.map(result => `
+                            <a href="${result.url}" class="paper-row" target="_blank">
                                 <div class="paper-info">
-                                    <h3>${paper.title}</h3>
-                                    <p>${branch} - Semester ${s}</p>
+                                    <h3>${result.title}</h3>
+                                    <p>${c}</p>
                                 </div>
-                                <div class="paper-download"></div>
+                                <div class="paper-download">Check Here &rarr;</div>
                             </a>
                         `).join('');
                     }
                 }
             } else {
-                // Render Papers for specific branch and semester
-                const branchPapers = papersData[branch] || {};
-                const dummyPapers = branchPapers[semester];
-                if (dummyPapers && dummyPapers.length > 0) {
-                    htmlToRender += dummyPapers.map(paper => `
-                        <a href="https://rtuonline.in/" class="paper-row" target="_blank">
+                const courseResults = resultsData[course];
+                if (courseResults && courseResults.length > 0) {
+                    htmlToRender += courseResults.map(result => `
+                        <a href="${result.url}" class="paper-row" target="_blank">
                             <div class="paper-info">
-                                <h3>${paper.title}</h3>
-                                <p>${branch} - Semester ${semester}</p>
+                                <h3>${result.title}</h3>
+                                <p>${course}</p>
                             </div>
-                            <div class="paper-download"></div>
+                            <div class="paper-download">Check Here &rarr;</div>
                         </a>
                     `).join('');
                 }
             }
 
             if (!htmlToRender) {
-                papersList.innerHTML = `
+                resultsList.innerHTML = `
                     <div style="text-align: center; padding: 2rem; background: #fff; border: 1px solid #ddd; border-radius: 4px;">
-                        <h3 style="color: #ff5100;">No Papers Available</h3>
+                        <h3 style="color: #ff5100;">No Results Available</h3>
                         <p style="color: #666; margin-top: 10px;">We are currently updating our database.</p>
                     </div>
                 `;
             } else {
-                papersList.innerHTML = htmlToRender;
+                resultsList.innerHTML = htmlToRender;
             }
 
             if (scroll) {
                 setTimeout(() => {
-                    papersSection.scrollIntoView({ behavior: 'smooth' });
+                    resultsSection.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
             }
         }
