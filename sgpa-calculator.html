@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="/rtu.jpg">
+
+    <title>RTU SGPA Calculator - Calculate Semester SGPA Online</title>
+    <meta name="description" content="Use the free RTU SGPA Calculator to estimate your semester grade point average from subject credits and grades. Includes the formula, steps and example.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="RTU Online">
+    <meta name="theme-color" content="#007bff">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="RTU Online">
+    <meta property="og:title" content="RTU SGPA Calculator - Calculate Semester SGPA Online">
+    <meta property="og:description" content="Estimate your RTU semester SGPA from subject credits and grades with this free online calculator.">
+    <meta property="og:url" content="https://rtuonline.in/sgpa-calculator">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="RTU SGPA Calculator - Calculate Semester SGPA Online">
+    <meta name="twitter:description" content="Estimate your RTU semester SGPA from subject credits and grades.">
+    <link rel="canonical" href="https://rtuonline.in/sgpa-calculator">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "@id": "https://rtuonline.in/sgpa-calculator#webpage",
+                "url": "https://rtuonline.in/sgpa-calculator",
+                "name": "RTU SGPA Calculator - Calculate Semester SGPA Online",
+                "description": "Estimate RTU semester SGPA from subject credits and grades.",
+                "inLanguage": "en-IN",
+                "isPartOf": { "@id": "https://rtuonline.in/#website" },
+                "mainEntity": { "@id": "https://rtuonline.in/sgpa-calculator#calculator" },
+                "breadcrumb": { "@id": "https://rtuonline.in/sgpa-calculator#breadcrumb" }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://rtuonline.in/#website",
+                "url": "https://rtuonline.in/",
+                "name": "RTU Online",
+                "inLanguage": "en-IN"
+            },
+            {
+                "@type": "WebApplication",
+                "@id": "https://rtuonline.in/sgpa-calculator#calculator",
+                "name": "RTU SGPA Calculator",
+                "url": "https://rtuonline.in/sgpa-calculator",
+                "applicationCategory": "EducationalApplication",
+                "operatingSystem": "Any",
+                "browserRequirements": "Requires JavaScript",
+                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://rtuonline.in/sgpa-calculator#breadcrumb",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rtuonline.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "RTU SGPA Calculator", "item": "https://rtuonline.in/sgpa-calculator" }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is SGPA in RTU?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "SGPA is the Semester Grade Point Average. It represents a student's weighted academic performance for one semester based on subject credits and grade points." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How is RTU SGPA calculated?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Multiply each subject's credit value by its grade point, add all weighted grade points, and divide the result by the total credits counted in that semester." }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is this RTU SGPA Calculator official?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "No. This is an independent estimation tool. Students should use their official RTU grade card or university rules for final academic records." }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3WFB85DDZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M3WFB85DDZ');
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header and Navigation - Preserved */
+        header {
+            background: #ffffff;
+            color: #333;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #007bff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 3rem 20px 2rem;
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main Sections */
+        .courses {
+            padding: 2.5rem 20px;
+            text-align: center;
+        }
+
+        .courses h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            color: #222;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .courses-alt {
+            background-color: #fcfcfc;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .grade-table-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        .grade-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+
+        .grade-table th,
+        .grade-table td {
+            padding: 12px 18px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .grade-table th {
+            background: #f4f8ff;
+            color: #0056b3;
+            font-weight: 700;
+        }
+
+        .grade-table tbody tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        /* Calculator */
+        .calculator-section {
+            background: #fcfcfc;
+        }
+
+        .calculator-box {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 25px;
+            text-align: left;
+        }
+
+        .calculator-top {
+            display: flex;
+            gap: 15px;
+            align-items: end;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 7px;
+            color: #333;
+        }
+
+        .input-group select,
+        .subject-name,
+        .credit-input,
+        .grade-select {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            outline: none;
+            background: #fff;
+        }
+
+        .input-group select:focus,
+        .subject-name:focus,
+        .credit-input:focus,
+        .grade-select:focus {
+            border-color: #007bff;
+        }
+
+        .generate-btn,
+        .calculate-btn,
+        .reset-btn {
+            border: none;
+            border-radius: 4px;
+            padding: 11px 18px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .generate-btn,
+        .calculate-btn {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .generate-btn:hover,
+        .calculate-btn:hover {
+            background: #0056b3;
+        }
+
+        .reset-btn {
+            background: #f1f1f1;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .reset-btn:hover {
+            background: #e2e2e2;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        .sgpa-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 650px;
+        }
+
+        .sgpa-table th {
+            background: #f4f8ff;
+            color: #0056b3;
+            padding: 13px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .sgpa-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .calculator-actions {
+            margin-top: 22px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .result-box {
+            margin-top: 25px;
+            text-align: center;
+            padding: 22px;
+            border: 1px solid #a3c6ff;
+            background: #f4f8ff;
+            border-radius: 5px;
+        }
+
+        .result-box p {
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .result-box h3 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+
+        .result-box span {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .formula-box {
+            margin-top: 22px;
+            background: #f4f8ff;
+            border: 1px solid #a3c6ff;
+            padding: 18px;
+            border-radius: 4px;
+            color: #0056b3;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .calculator-info {
+            max-width: 850px;
+        }
+
+        .calculator-info p {
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .calculator-info p + p {
+            margin-top: 1rem;
+        }
+
+        .calculator-info a {
+            color: #0056b3;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .steps,
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .steps {
+            padding-left: 1.25rem;
+        }
+
+        .steps li {
+            margin-bottom: 0.75rem;
+            color: #555;
+        }
+
+        .faq-item {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-item h3 {
+            color: #222;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            color: #555;
+        }
+
+        /* Footer - Preserved */
+        footer {
+            background: #ffffff;
+            color: #555;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007bff;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 5px;
+            border: 0;
+            background: transparent;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav {
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+            }
+
+            nav.active {
+                max-height: 250px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                padding: 15px 0;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .hero {
+                padding: 3rem 15px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .courses {
+                padding: 2.5rem 15px;
+            }
+
+            .calculator-box {
+                padding: 15px;
+            }
+
+            .calculator-top {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .input-group {
+                width: 100%;
+            }
+
+            .generate-btn {
+                width: 100%;
+            }
+
+            .calculator-actions {
+                flex-direction: column;
+            }
+
+            .calculate-btn,
+            .reset-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-container">
+            <a href="https://rtuonline.in" class="logo">RTU<span>Online</span></a>
+
+            <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/papers">Papers</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
+                    <li><a href="/result">Result</a></li>
+                    <li><a href="/search">Search</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>RTU SGPA Calculator</h1>
+                <p>Calculate your Rajasthan Technical University semester SGPA online using the credits and grades shown on your RTU grade card.</p>
+            </div>
+        </section>
+
+        <section class="courses calculator-section">
+            <div class="container">
+                <h2>Calculate Your RTU Semester SGPA</h2>
+
+                <div class="calculator-box">
+                    <div class="calculator-top">
+                        <div class="input-group">
+                            <label for="subject-count">Number of Subjects</label>
+                            <select id="subject-count">
+                                <option value="5">5 Subjects</option>
+                                <option value="6">6 Subjects</option>
+                                <option value="7">7 Subjects</option>
+                                <option value="8">8 Subjects</option>
+                                <option value="9">9 Subjects</option>
+                                <option value="10">10 Subjects</option>
+                                <option value="11">11 Subjects</option>
+                                <option value="12">12 Subjects</option>
+                            </select>
+                        </div>
+
+                        <button class="generate-btn" type="button" onclick="generateSubjects()">Add Subjects</button>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table class="sgpa-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject Name</th>
+                                    <th>Credits</th>
+                                    <th>Grade</th>
+                                    <th>Grade Point</th>
+                                </tr>
+                            </thead>
+                            <tbody id="subjects-container"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="calculator-actions">
+                        <button class="calculate-btn" type="button" onclick="calculateSGPA()">Calculate SGPA</button>
+                        <button class="reset-btn" type="button" onclick="resetCalculator()">Reset</button>
+                    </div>
+
+                    <div class="result-box">
+                        <p>Your Estimated SGPA</p>
+                        <h3 id="sgpa-result">0.00</h3>
+                        <span id="result-message">Enter your subject details to calculate SGPA.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses courses-alt">
+            <div class="container calculator-info">
+                <h2>About the RTU SGPA Calculator</h2>
+                <p>
+                    The RTU SGPA Calculator is a simple online tool for Rajasthan Technical University
+                    students who want to estimate their Semester Grade Point Average. It uses each
+                    subject's credit value and earned grade to calculate a credit-weighted SGPA.
+                </p>
+                <p>
+                    You can use this RTU SGPA calculator for any semester by entering the subjects
+                    shown on your grade card. The calculator supports grades from A++ to F and displays
+                    the estimated result to two decimal places, making it easy to review your semester
+                    performance without calculating every credit-point product manually.
+                </p>
+                <p>
+                    For course and exam preparation, explore the
+                    <a href="/syllabus">RTU syllabus</a> and
+                    <a href="/papers">RTU previous year papers</a>. After calculating SGPA for multiple
+                    semesters, use the <a href="/cgpa-calculator">RTU CGPA Calculator</a> to estimate
+                    your cumulative grade point average.
+                </p>
+            </div>
+        </section>
+
+        <section class="courses">
+            <div class="container calculator-info">
+                <h2>How to Use the RTU SGPA Calculator</h2>
+                <ol class="steps">
+                    <li>Select the number of subjects listed on your grade card.</li>
+                    <li>Enter each subject name, its credit value and the grade you received.</li>
+                    <li>Select <strong>Calculate SGPA</strong> to see your estimated semester grade point average.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="courses courses-alt">
+            <div class="container">
+                <h2>RTU Grade Point System</h2>
+
+                <div class="grade-table-wrapper">
+                    <table class="grade-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Grade</th>
+                                <th scope="col">Grade Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>A++</td><td>10</td></tr>
+                            <tr><td>A+</td><td>9.0</td></tr>
+                            <tr><td>A</td><td>8.5</td></tr>
+                            <tr><td>B+</td><td>8.0</td></tr>
+                            <tr><td>B</td><td>7.5</td></tr>
+                            <tr><td>C+</td><td>7.0</td></tr>
+                            <tr><td>C</td><td>6.5</td></tr>
+                            <tr><td>D+</td><td>6.0</td></tr>
+                            <tr><td>D</td><td>5.5</td></tr>
+                            <tr><td>E+</td><td>5.0</td></tr>
+                            <tr><td>E</td><td>4.0</td></tr>
+                            <tr><td>F</td><td>0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses">
+            <div class="container calculator-info">
+                <h2>RTU SGPA Formula</h2>
+                <p>
+                    SGPA is a credit-weighted average. Multiply the credits for every subject by the
+                    corresponding grade point, add those results and divide by the total credits.
+                </p>
+
+                <div class="formula-box">
+                    SGPA = Sum of (Subject Credit x Grade Point) / Total Credits
+                </div>
+
+                <p>
+                    <strong>Example:</strong> If three subjects have credit-point products of 30, 36
+                    and 24, the weighted total is 90. If their combined credits are 11, the estimated
+                    SGPA is 90 / 11 = 8.18.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="courses courses-alt" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading">RTU SGPA Calculator FAQs</h2>
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <h3>What is SGPA in RTU?</h3>
+                        <p>SGPA means Semester Grade Point Average. It represents your credit-weighted academic performance for one semester.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>How is RTU SGPA calculated?</h3>
+                        <p>Multiply each subject's credits by its grade point, add the weighted grade points and divide by the total credits counted in the semester.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>Is this RTU SGPA Calculator official?</h3>
+                        <p>No. It is an independent estimation tool. Use your official RTU grade card or university rules for final academic records.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; RTU Online (rtuonline.in). All rights reserved.</p>
+            <p>
+                <a href="/about">About Us</a> |
+                <a href="/contact">Contact Us</a> |
+                <a href="/privacy">Privacy Policy</a> |
+                <a href="/terms">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('#nav-menu ul li a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            const isOpen = hamburger.classList.contains('active');
+            hamburger.setAttribute('aria-expanded', isOpen.toString());
+            hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburger.setAttribute('aria-label', 'Open navigation menu');
+            });
+        });
+
+        const gradePoints = {
+            "A++": 10,
+            "A+": 9.0,
+            "A": 8.5,
+            "B+": 8.0,
+            "B": 7.5,
+            "C+": 7.0,
+            "C": 6.5,
+            "D+": 6.0,
+            "D": 5.5,
+            "E+": 5.0,
+            "E": 4.0,
+            "F": 0
+        };
+
+        function generateSubjects() {
+            const subjectCount = document.getElementById("subject-count").value;
+            const subjectsContainer = document.getElementById("subjects-container");
+
+            let subjectHTML = "";
+
+            for (let i = 1; i <= subjectCount; i++) {
+                subjectHTML += `
+                    <tr>
+                        <td>
+                            <input type="text" class="subject-name" placeholder="Subject ${i}">
+                        </td>
+                        <td>
+                            <input type="number" class="credit-input" min="0" max="10" value="3">
+                        </td>
+                        <td>
+                            <select class="grade-select" onchange="updateGradePoint(this)">
+                                <option value="">Select Grade</option>
+                                <option value="A++">A++</option>
+                                <option value="A+">A+</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="E+">E+</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                            </select>
+                        </td>
+                        <td class="grade-point">-</td>
+                    </tr>
+                `;
+            }
+
+            subjectsContainer.innerHTML = subjectHTML;
+
+            document.getElementById("sgpa-result").innerText = "0.00";
+            document.getElementById("result-message").innerText =
+                "Enter grades and credits for all subjects.";
+        }
+
+        function updateGradePoint(selectElement) {
+            const selectedGrade = selectElement.value;
+            const row = selectElement.closest("tr");
+            const gradePointCell = row.querySelector(".grade-point");
+
+            if (selectedGrade && gradePoints[selectedGrade] !== undefined) {
+                gradePointCell.innerText = gradePoints[selectedGrade];
+            } else {
+                gradePointCell.innerText = "-";
+            }
+        }
+
+        function calculateSGPA() {
+            const rows = document.querySelectorAll("#subjects-container tr");
+
+            if (rows.length === 0) {
+                alert("Please add subjects first.");
+                return;
+            }
+
+            let totalCredits = 0;
+            let totalPoints = 0;
+            let validSubjects = 0;
+
+            rows.forEach(row => {
+                const credit = parseFloat(row.querySelector(".credit-input").value);
+                const grade = row.querySelector(".grade-select").value;
+
+                if (!isNaN(credit) && credit > 0 && grade !== "") {
+                    totalCredits += credit;
+                    totalPoints += credit * gradePoints[grade];
+                    validSubjects++;
+                }
+            });
+
+            if (validSubjects === 0 || totalCredits === 0) {
+                alert("Please enter valid credits and grades.");
+                return;
+            }
+
+            const sgpa = totalPoints / totalCredits;
+
+            document.getElementById("sgpa-result").innerText = sgpa.toFixed(2);
+
+            let message = "";
+
+            if (sgpa >= 9) {
+                message = "Excellent performance!";
+            } else if (sgpa >= 8) {
+                message = "Very good performance!";
+            } else if (sgpa >= 7) {
+                message = "Good performance!";
+            } else if (sgpa >= 6) {
+                message = "Keep improving!";
+            } else if (sgpa >= 4) {
+                message = "Focus on improvement.";
+            } else {
+                message = "Please check your grades and work on improvement.";
+            }
+
+            document.getElementById("result-message").innerText = message;
+        }
+
+        function resetCalculator() {
+            document.getElementById("subject-count").value = "5";
+            document.getElementById("subjects-container").innerHTML = "";
+            document.getElementById("sgpa-result").innerText = "0.00";
+            document.getElementById("result-message").innerText =
+                "Enter your subject details to calculate SGPA.";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            generateSubjects();
+        });
+    </script>
+
+</body>
+</html>
